@@ -1,0 +1,23 @@
+:root {
+  --background-color-override: #00324D;
+  --color-override: #eee;
+  --secondary-color-override: #eee;
+  --accent-color-override: #FF99CC;
+  --label-color-override: #eee;
+  --timer-color-override: #202020;
+  --card-background-color-override: #084263;
+  --font-family-override: "Montserrat", sans-serif;
+  --font-family-bold-override: "Montserrat", sans-serif;
+  --timer-progress-bg-override: #eee;
+  --timer-progress-override: #eee;
+}
+
+.timer {
+  color: black !important;
+}
+
+
+// Overriding font for timers
+.timer {
+  font-family: "Comic Sans MS", serif !important;
+}

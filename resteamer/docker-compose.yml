@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+    restreamer:
+        container_name: restreamer1
+        privileged: true
+        volumes:
+            - '/opt/core/config:/core/config'
+            - '/opt/core/data:/core/data'
+        ports:
+            - '8282:8080'
+            - '8181:8181'
+            - '1935:1935'
+            - '1936:1936'
+            - '6000:6000/udp'
+        image: 'datarhei/restreamer:latest'
+
+        networks:
+            - proxy
+
+networks:
+  proxy:
+    external: true

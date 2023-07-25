@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  rss-bridge:
+    image: rssbridge/rss-bridge:latest
+    volumes:
+      - ~/rssbridge/data:/config
+    ports:
+      - 3000:80
+    restart: unless-stopped
+
+    networks:
+      - proxy
+
+networks:
+  proxy:
+    external: true

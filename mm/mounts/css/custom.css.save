@@ -1,0 +1,29 @@
+:root {
+  --color-text: #999;
+  --color-text-dimmed: #666;
+  --color-text-bright: #fff;
+  --color-background: #00324D;
+  --font-primary: "Roboto Condensed";
+  --font-secondary: "Roboto";
+  --font-size: 20px;
+  --font-size-small: 0.75rem;
+  --gap-body-top: 0px;
+  --gap-body-right: 0px;
+  --gap-body-bottom: 0px;
+  --gap-body-left: 0px;
+  --gap-modules: 0px;
+}
+
+
+.newsfeed {
+    color: #202020;
+    text-align: left;
+    background-color: #;
+    border-radius: 10px;
+    height: calc(var(--font-size) + 6px);
+    padding: 6px 6px 0;
+    font-weight: bold;
+    margin-left: 50%;
+    width: 50%;
+    height: 50%;
+}

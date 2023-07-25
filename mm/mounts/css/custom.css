@@ -1,0 +1,38 @@
+:root {
+  --color-text: #999;
+  --color-text-dimmed: #666;
+  --color-text-bright: #fff;
+  --color-background: #00324D;
+  --font-primary: "Roboto Condensed";
+  --font-secondary: "Roboto";
+  --font-size: 20px;
+  --font-size-small: 0.75rem;
+  --gap-body-top: 0px;
+  --gap-body-right: 0px;
+  --gap-body-bottom: 0px;
+  --gap-body-left: 0px;
+  --gap-modules: 60px;
+}
+
+.newsfeed {
+  color: #eee;
+  position: relative;
+  font-size: 30px;
+  line-height: 20px;
+  background-color: #084263;
+  padding-top: 16px;
+  padding-right: 24px;
+  padding-bottom: 16px;
+  padding-left: 24px;
+  border-radius: 10px;
+  margin-left: 64px;
+  font-family:  "Montserrat", sans-serif;
+
+}
+
+
+.region.bottom.left {
+    width: 843px;
+    hight: 300px;
+    margin-bottom: 20px;
+}

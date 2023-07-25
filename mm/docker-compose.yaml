@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  magicmirror:
+    container_name: mm
+    image: karsten13/magicmirror:latest
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./mounts/config:/opt/magic_mirror/config
+      - ./mounts/modules:/opt/magic_mirror/modules
+      - ./mounts/css:/opt/magic_mirror/css
+    restart: unless-stopped
+    command: 
+      - npm
+      - run
+      - server
+    networks:
+      - proxy
+
+networks:
+  proxy:
+    external: true
+    
